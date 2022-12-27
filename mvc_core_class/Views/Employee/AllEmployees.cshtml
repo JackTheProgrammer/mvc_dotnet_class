@@ -1,0 +1,12 @@
+﻿@model mvc_core_class.Models.Employee
+
+<table>
+    @foreach (Employee employee in (List<Employee>)ViewData["allEmployees"]!)
+     {
+            <tr>
+                <td>@employee.employeeName</td>
+                <td>@employee.contactNo</td>
+                <td>@employee.empAddress</td>
+            </tr>
+     }
+</table>
